@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pro147</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+    <a-assets timeout = '10000'>
+        <a-assets-item id = 'desk' src = "desk.glb"></a-assets-item>
+    </a-assets>
+
+    <a-entity>
+        <a-entity gltf-model = '#desk' shadow = 'cast: true' scale = '0.05 0.05 0.05' position ='-3 0 0' rotation = '0 55 0'>
+            
+        </a-entity>
+    </a-scene>
+</body>
+</html>
